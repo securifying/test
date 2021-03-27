@@ -15,21 +15,16 @@
  
   <script type="text/javascript">
 
- 	// function modifyPdf(roll_number) {
-  //     document.getElementById("myButton").onclick = function () {
-  //       location.href = "www.yoursite.com";
-  //   };
-  //   }
+  	var links = {
+		"600008":"1bgTPBPAceAQza57Imukzot4U84L50iKa",
+		"700005":"1G6chg4tdYz--3JLUsjiFXY7MSoCiCbVD",
+	}
 
 	window.onload = function(){
 	document.getElementById('login-form').onsubmit = function() { 
 	rollno = document.getElementById('roll').value;
-	location.href = `Certificates/${rollno}.pdf`;
-	// console.log();
-
-	// modifyPdf(rollno)
+	location.href = `https://drive.google.com/file/d/${links[rollno]}/view`;
   
-
   return false;
 };} 	
  </script>

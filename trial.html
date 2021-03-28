@@ -7,11 +7,18 @@
 
 	b = JSON.parse(a)
 
-x = 900662
+x = 900663
 
 const urls = {
         "Participation":"https://raw.githubusercontent.com/securifying/test/master/participation_all.pdf",
     }
+
+if (b[x]) {
+	console.log("Found")
+}
+else {
+	console.log("Not found")
+}
 
 console.log(urls[b[x]['type_of_cert']])
 console.log(b[x]['serial_number'])
